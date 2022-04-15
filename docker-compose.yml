@@ -1,0 +1,9 @@
+version: "3"
+services:
+  apache_flask_wsgi:
+    build: .
+    container_name: apache_flask_wsgi
+    ports:
+      - "80:80"
+    volumes:
+      - "./app:/var/www/html/app"
